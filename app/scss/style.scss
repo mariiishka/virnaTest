@@ -1,6 +1,7 @@
 @import "global";
 @import "fonts";
 @import "header";
+@import "main";
 
 html {
     box-sizing: border-box;
@@ -60,6 +61,7 @@ select {
     background-image: url('../img/icons/arrow.svg');
     background-repeat: no-repeat;
     background-position: right;
+    cursor: pointer;
 }
 
 picture {

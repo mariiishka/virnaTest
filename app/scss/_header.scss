@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        bottom: 32px;
+        bottom: 29px;
         padding-left: 18px;
         padding-right: 16px;
         width: 100vw;
@@ -92,7 +92,7 @@
         align-items: flex-end;
         width: 91px;
         justify-content: space-between;
-        margin-right: 40%;
+        margin-right: 41.5%;
     }
     &__lang {
         font-size: 14px;
@@ -139,6 +139,7 @@
         &__nav {
             width: 100%;
             padding: 0 96px 0 40px;
+            bottom: 32px;
         }
     }
 
@@ -157,18 +158,18 @@
             height: 530px;
         }
         &__brand {
-            width: 465px;
+            width: 463px;
         }
         &__logo {
             width: 225px;
             padding-left: 73px;
         }
         &__attribute {
-            right: 95px;
+            right: 96px;
             top: 188px;
         }
         &__caption {
-            padding-left: 97px;
+            padding-left: 95px;
         }
         &__title {
             margin-top: 77px;
@@ -180,7 +181,7 @@
             transform: rotate(-90deg) translateX(-20.5px) translateY(-34px);
         }
         &__nav {
-            padding-left: 97px;
+            padding-left: 95px;
             padding-right: 104px;
         }
     }
@@ -188,8 +189,7 @@
     .nav {
         &__links {
             width: 100px;
-            margin-right: 0;
-            padding-right: 9px;
+            padding-right: 6px;
         }
     }
         
@@ -201,16 +201,39 @@
             height: 802px;
         }
         &__brand {
-            width: 733px;
+            width: 728px;
         }
         &__logo {
-            width: 324px;
-            padding-left: 117px;
+            width: 321px;
+            padding-left: 116px;
             padding-top: 36px;
         }
         &__attribute {
-            right: 143px;
-            top: 286.26px;
+            right: 140px;
+            top: 288px;
+        }
+        &__title {
+            line-height: 72px;
+            margin-top: 149px;
+        }
+        &__caption {
+            padding-left: 134px;
+        }
+        &__sub-title {
+            transform: rotate(-90deg) translateX(-33px) translateY(-36px);
+        }
+        &__nav {
+            bottom: 63px;
+            padding-left: 134px;
+            padding-right: 171px;
+        }
+    }
+    .nav {
+        &__links {
+            width: 86px;
+            padding-right: 0;
+            margin-right: 125px;
+            justify-content: space-between;
         }
     }
 }
@@ -225,12 +248,36 @@
         }
         &__logo {
             width: 465px;
-            padding-left: 145px;
+            padding-left: 146px;
             padding-top: 55px;
         }
         &__attribute {
-            right: 255px;
-            top: 448px;
+            right: 256px;
+            top: 450px;
+        }
+        &__caption {
+            padding-top: 50px;
+            padding-left: 255px;
+        }
+        &__title {
+            margin-top: 215px;
+            line-height: 72px;
+        }
+        &__sub-title {
+            transform: rotate(-90deg) translateX(-34px) translateY(-36px);
+        }
+        &__nav {
+            padding-left: 255px;
+            padding-right: 96px;
+            bottom: 51px;
+        }
+    }
+    .nav {
+        &__links {
+            width: 58px;
+            padding-right: 0;
+            margin-right: 168px;
+            justify-content: space-between;
         }
     }
 }
