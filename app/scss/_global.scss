@@ -1,0 +1,58 @@
+$mainColor: #000;
+$font-ceraRegular:  'CeraPro-Regular', Arial, sans-serif;
+$font-ceraMedium: 'CeraPro-Medium', Arial, sans-serif;
+$font-ceraBold: 'CeraPro-Bold', Arial, sans-serif;
+$font-montserrat: 'Montserrat', Arial, sans-serif;
+
+
+h1 {
+    font-family: $font-ceraBold;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+@media screen and (min-width: 960px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 72px;
+    }
+}
+
+h2 {
+    font-family: $font-ceraBold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+@media screen and (min-width: 960px) {
+    h2 {
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    h2 {
+        font-size: 56px;
+    }
+}
+
+h3 {
+    font-family: $font-ceraMedium;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+@media screen and (min-width: 960px) {
+    h3 {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+

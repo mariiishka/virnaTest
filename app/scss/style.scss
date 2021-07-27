@@ -1,9 +1,20 @@
 @import "global";
 @import "fonts";
+@import "header";
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: $mainColor;
+    font-family: $font-ceraRegular;
 }
 
 *,*::before, *::after {
@@ -15,15 +26,16 @@ a {
     color: inherit;
 }
 
-button {
+button, select {
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
+    text-transform: none;
 }
 
-ul, li {
+ol, ul, li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -32,7 +44,7 @@ ul, li {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    font-size: inherit;
+    // font-size: inherit;
 }
 
 p {
@@ -41,9 +53,18 @@ p {
     font-size: inherit;
 }
 
-body {
-    min-width: 320px;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+select {
+    width: 24px;
+    outline: none;
+    appearance: none;
+    background-image: url('../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+picture {
+    display: flex;
+    align-items: inherit;
+}
+
+
