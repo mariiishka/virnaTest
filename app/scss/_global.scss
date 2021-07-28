@@ -26,16 +26,18 @@ h2 {
     font-family: $font-ceraBold;
     font-size: 32px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 40.22px;
 }
 @media screen and (min-width: 960px) {
     h2 {
         font-size: 36px;
+        line-height: 45.25px;
     }
 }
 @media screen and (min-width: 1440px) {
     h2 {
         font-size: 56px;
+        line-height: 70.39px;
     }
 }
 

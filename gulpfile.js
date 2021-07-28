@@ -22,7 +22,7 @@ function html() {
     return src('app/**/*.html')
         .pipe(fileInclude())
         .pipe(htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
         .pipe(dest('dist'))
 }
@@ -61,7 +61,7 @@ function scripts() {
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'nested'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],

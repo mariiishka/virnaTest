@@ -1,0 +1,119 @@
+.main {
+    &__inner {
+        position: relative;
+        padding: 50px 15px 0;
+    }
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__colors {
+        margin-top: 104px;
+        position: relative;
+    }
+    &__palettes {
+        margin-top: 113px;
+    }
+}
+
+.parag__text {
+    margin: 30px 0 0 31px;
+    p {
+        font-family: $font-montserrat;
+        font-size: 12px;
+    }
+}
+
+.colors {
+    &__parag {
+        margin-left: 31px;
+        width: 299px;
+    }
+    &__sub-title {
+        float: right;
+    }
+}
+
+.color {
+    &__dark {
+        position: absolute;
+        top: 218px;
+        transform: rotate(-90deg) translateX(-8px) translateY(-8px);
+    }
+    &__vin-title {
+        position: absolute;
+        top: 130px;
+        right: 0px;
+        transform: rotate(-90deg) translateX(-22px) translateY(22px);
+    }
+    &__vinous {
+        grid-area: vin;
+        background-color: #9a0034;
+        margin-left: 20px;   
+        margin-right: 17px;
+    }
+    &__pink {
+        grid-area: pink;
+        background-color: #d7969e;
+    }
+    &__pink-light {
+        grid-area: pink-light;
+        background-color: #e8d8d9;
+    }
+    &__gray-light {
+        grid-area: gray-light;
+        margin-top: -20px;
+        height: 50px;
+        background-color: #dedcdc;
+    }
+    &__gray-dark {
+        grid-area: gray-dark;
+        background-color: #898989;
+    }
+    &__gray {
+        grid-area: gray;
+        background-color: #b7b7b7;
+    }
+    &__black {
+        grid-area: black;
+        background-color: #000;
+    }
+    p {
+        font-family: $font-ceraMedium;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+}
+
+.palette {
+    &__first {
+        float: right;
+        display: grid;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 50px);
+        grid-gap: 50px 30px;
+        grid-template-areas: 
+        '. vin vin'
+        'pink-light pink .'
+        '. . gray-light'
+        ;
+    }
+    &__second {
+        margin-top: 10px;
+        float: left;
+        display: grid;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(2, 50px);
+        grid-gap: 33px 30px;
+        grid-template-areas: 
+        'gray-dark . .'
+        '. gray black'
+        ;
+    }
+}
+
+.absolute {
+    position: absolute;
+    bottom: -33px;
+}
