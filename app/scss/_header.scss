@@ -87,6 +87,12 @@
             background-color: $mainColor;
             box-shadow: 0 6px 0 0 $mainColor, 0 12px 0 0 $mainColor;
         }
+        &:hover, &:focus, &:active {
+            &::after {
+                background-color: $hover;
+                box-shadow: 0 6px 0 0 $hover, 0 12px 0 0 $hover;
+            }
+        }
     }
     &__links {
         display: flex;
@@ -97,6 +103,9 @@
     }
     &__lang {
         font-size: 14px;
+        &:hover, &:focus {
+            color: $hover;
+        }
     }
 }
 
@@ -206,7 +215,7 @@
         }
         &__logo {
             width: 321px;
-            padding-left: 116px;
+            padding-left: 117px;
             padding-top: 36px;
         }
         &__attribute {
@@ -218,7 +227,7 @@
             margin-top: 149px;
         }
         &__caption {
-            padding-left: 134px;
+            padding-left: 135px;
         }
         &__sub-title {
             transform: rotate(-90deg) translateX(-33px) translateY(-36px);
@@ -249,8 +258,8 @@
         }
         &__logo {
             width: 465px;
-            padding-left: 146px;
-            padding-top: 55px;
+            padding-left: 145px;
+            padding-top: 56px;
         }
         &__attribute {
             right: 256px;
@@ -261,11 +270,11 @@
             padding-left: 255px;
         }
         &__title {
-            margin-top: 215px;
+            margin-top: 213px;
             line-height: 72px;
         }
         &__sub-title {
-            transform: rotate(-90deg) translateX(-34px) translateY(-36px);
+            transform: rotate(-90deg) translateX(-37px) translateY(-37px);
         }
         &__nav {
             padding-left: 255px;
@@ -282,3 +291,4 @@
         }
     }
 }
+

@@ -8,19 +8,118 @@
         justify-content: space-between;
     }
     &__colors {
-        margin-top: 104px;
+        margin-top: 117px;
         position: relative;
     }
     &__palettes {
-        margin-top: 113px;
+        margin-top: 115px;
+        position: relative;
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        &__inner {
+            padding-top: 50px;
+            padding-left: 39px;
+            padding-right: 41px;
+        }
+        &__palettes {
+            margin-top: 24px;
+        }
+        &__colors {
+            margin-top: 65px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .main {
+        &__inner {
+            padding-top: 68px;
+            padding-right: 100px;
+        }
+        &__colors {
+            margin-top: 60px;
+        }
+        &__palettes {
+            margin-top: 26px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        &__inner {
+            padding-top: 80px;
+            padding-right: 255px;
+            padding-left: 80px;
+        }
+        &__colors {
+            margin-top: 51px;
+        }
+        &__palettes {
+            margin-top: 6px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .main {
+        &__inner {
+            padding: 100px 372px 0 205px;
+        }
+        &__palettes {
+            margin-top: -3px;
+        }
     }
 }
 
 .parag__text {
-    margin: 30px 0 0 31px;
+    margin: 32px 0 0 31px;
     p {
         font-family: $font-montserrat;
         font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .parag__text {
+        margin: 50px 0 0 62px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .parag__text {
+        margin: 56px 0 0 79px;
+        p {
+            font-size: 13px;
+            line-height: 17.21px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .caption__parag {
+        margin-right: 39px;
+    }
+    .parag__text {
+        margin: 53px 0 0 105px;
+        p {
+            font-size: 14px;
+            line-height: 18.5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .caption__parag {
+        margin-right: 142px;
+    }
+    .parag__text {
+        margin: 53px 0 0 120px;
     }
 }
 
@@ -30,26 +129,83 @@
         width: 299px;
     }
     &__sub-title {
+        font-size: 13px;
+        margin-top: 3px;
         float: right;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .colors {
+        &__parag {
+            margin-left: 50px;
+            width: 280px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .colors {
+        &__parag {
+            margin-left: 103px;
+            width: 320px;
+        }
+        &__sub-title {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: -10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .colors {
+        &__parag {
+            margin-left: 100px;
+            width: 421px;
+        }
+        &__sub-title {
+            font-size: 16px;
+            margin-top: 2px;
+        }
+    }   
+}
+
+@media screen and (min-width: 1920px) {
+    .colors {
+        &__parag {
+            width: 400px;
+        }
+        &__sub-title {
+            margin-top: 4px;
+        }
     }
 }
 
 .color {
     &__dark {
         position: absolute;
-        top: 218px;
+        top: 220px;
+        left: 13px;
         transform: rotate(-90deg) translateX(-8px) translateY(-8px);
+    }
+    &__bright {
+        position: absolute;
+        right: 0px;
+        bottom: -34px;
+        transform: rotate(-90deg) translateX(15px) translateY(15px);
     }
     &__vin-title {
         position: absolute;
-        top: 130px;
-        right: 0px;
+        top: 128px;
+        right: 3px;
         transform: rotate(-90deg) translateX(-22px) translateY(22px);
     }
     &__vinous {
         grid-area: vin;
         background-color: #9a0034;
-        margin-left: 20px;   
+        margin-left: 21px;
         margin-right: 17px;
     }
     &__pink {
@@ -62,7 +218,7 @@
     }
     &__gray-light {
         grid-area: gray-light;
-        margin-top: -20px;
+        margin-top: -17px;
         height: 50px;
         background-color: #dedcdc;
     }
@@ -78,6 +234,12 @@
         grid-area: black;
         background-color: #000;
     }
+    &__hex {
+        font-family: $font-ceraMedium;
+        font-size: 14px;
+        margin-top: 65px;
+        text-transform: uppercase;
+    }
     p {
         font-family: $font-ceraMedium;
         font-size: 12px;
@@ -86,10 +248,138 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .color {
+        &__dark {
+            position: static;
+            transform: rotate(-90deg) translateX(-29px) translateY(48px);
+        }
+        &__bright {
+            right: -5px;
+        }
+        &__vin-title {
+            position: static;
+            transform: rotate(-90deg) translateX(-12px) translateY(65px);
+        }
+        &__vinous {
+            margin-right: 0;
+            width: 190px;
+            height: 51px;
+            margin-top: -26px;
+            margin-left: 19px;
+        }
+        &__pink-light {
+            margin-top: -17px;
+            height: 50px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .color {
+        &__dark {
+            transform: rotate(-90deg) translateX(-32px) translateY(107px);
+        }
+        &__bright {
+            right: -1px;
+            bottom: -32px;
+            p {
+                font-size: 14px;
+            }
+        }
+        &__pink-light, &__gray-light {
+            margin-top: -57px;
+        }
+        &__vin-title {
+            transform: rotate(-90deg) translateX(-13px) translateY(62px);
+            p {
+                font-size: 14px;
+            }
+        }
+        &__vinous {
+            width: 210px;
+            margin-top: 0;
+            margin-left: 41px;
+        }
+        &__black {
+            width: 90px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .color {
+        &__dark {
+            transform: rotate(-90deg) translateX(-28px) translateY(110px);
+        }
+        &__vin-title {
+            transform: rotate(-90deg) translateX(-13px) translateY(207px);
+        }
+        &__bright {
+            right: -120px;
+            bottom: -20px;
+            p {
+                font-size: 16px;
+            }
+        }
+        &__vinous {
+            width: 280px;
+            height: 70px;
+            margin-left: 129px;
+            margin-top: -10px;
+        }
+        &__pink-light, &__gray-light {
+            margin-top: -15px;
+            height: 60px;
+        }
+        &__hex {
+            margin-top: 70px;
+        }
+        &__hex-bright {
+            margin-top: 77px;
+        }
+        &__hex-pink {
+            margin-top: 73px;
+        }
+        &__black {
+            width: 130px;
+        }
+    }
+} 
+
+@media screen and (min-width: 1920px) {
+    .color {
+        &__dark {
+            transform: rotate(-90deg) translateX(-29px) translateY(109px);
+        }
+        &__bright {
+            right: -123px;
+            bottom: -19px;
+            transform: rotate(-90deg) translateX(11px) translateY(15px);
+        }
+        &__vin-title {
+            transform: rotate(-90deg) translateX(-7px) translateY(210px);
+        }
+        &__hex {
+            margin-top: 69px;
+        }
+        &__hex-bright {
+            margin-top: 77px;
+        }
+        &__hex-pink {
+            margin-top: 73px;
+        }
+    }
+}
+
+
 .palette {
     &__first {
-        float: right;
         display: grid;
+        justify-self: end;
         grid-template-columns: repeat(3, 70px);
         grid-template-rows: repeat(3, 50px);
         grid-gap: 50px 30px;
@@ -100,8 +390,7 @@
         ;
     }
     &__second {
-        margin-top: 10px;
-        float: left;
+        margin-top: 12px;
         display: grid;
         grid-template-columns: repeat(3, 70px);
         grid-template-rows: repeat(2, 50px);
@@ -113,7 +402,65 @@
     }
 }
 
-.absolute {
-    position: absolute;
-    bottom: -33px;
+@media screen and (min-width: 768px) {
+    .palette {
+        &__first {
+            margin-top: 29px;
+            margin-right: 57px;
+            grid-template-areas: 
+            '. vin vin'
+            'pink . .'
+            '. pink-light gray-light'
+            ;
+        }
+        &__second {
+            margin-top: -42px;
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .palette {
+        &__first {
+            grid-template-columns: repeat(3, 90px);
+            grid-template-rows: repeat(2, 50px);
+            grid-gap: 89px 30px;
+            margin-top: 2px;
+            margin-right: 39px;
+        }
+        &__second {
+            margin-top: -38px;
+            margin-left: 103px;
+            grid-template-columns: repeat(3, 80px);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .palette {
+        &__first {
+            grid-template-columns: repeat(3, 130px);
+            grid-template-rows: repeat(2, 60px);
+            grid-gap: 45px 30px;
+            margin-top: 2px;
+            margin-right: 3px;
+        }
+        &__second {
+            margin-top: -59px;
+            margin-left: 101px;
+            grid-gap: 28px 30px;
+            grid-template-columns: repeat(3, 130px);
+            grid-template-rows: repeat(2, 60px);
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .palette {
+        &__second {
+            margin-top: -63px;
+            margin-left: 171px;
+        }
+    }
 }

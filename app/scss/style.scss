@@ -2,16 +2,17 @@
 @import "fonts";
 @import "header";
 @import "main";
+@import "footer";
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body {
     min-width: 360px;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     color: $mainColor;
